@@ -1,0 +1,7 @@
+<%@animals.each do |animal|%>
+<ul>
+  <li><%=link_to animal.name, animal_path(animal)%></li>
+  <%=animal.type_of_animal%><br>
+  <%=link_to animal.shelter.name, shelter_path(animal.shelter)%>
+</ul><br>
+<%end%>

@@ -1,0 +1,2 @@
+class TypeOfAnimalsController < ApplicationController
+end

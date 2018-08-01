@@ -1,0 +1,6 @@
+  <h1>Name: <%=@animal.name%></h1>
+  <h3>Type: <%=@animal.type_of_animal.name%></h3>
+  <p>Description: <%=@animal.description%></p>
+  <p>Shelter: <%=link_to @animal.shelter_name, shelter_path(@animal.shelter)%></p>
+  <%=@animal.adoption_status_message%>
+  <!--show adoption status-!>
