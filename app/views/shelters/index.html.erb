@@ -1,7 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {style="background-color:#ffffff;"}
+h1   {text-align: center; font-family: "Futura" ; color:#92BFFF;}
+h2   {text-decoration: none; text-align: center; font-family: "Futura" ; color:#92BFFF;}
+p    {text-align: center; font-family: "Futura" ; color:#7F7F7D;}
+li   {list-style-type: none; text-decoration: none}
 
-<%@shelters.each do |shelter|%>
-<ul>
-<li><h1><%=link_to shelter.name, shelter_path(shelter)%></h1></li>
-<p><%=shelter.address%></p><br>
-</ul>
-<%end%>
+
+</style>
+<h1>All Shelters</h1>
+</head>
+    <body>
+      <%@shelters.each do |shelter|%>
+      <!-- <ul> -->
+      <li><h2><%=link_to shelter.name, shelter_path(shelter)%></h2></li>
+      <p><%=shelter.address%></p><br>
+      <!-- </ul> -->
+      <%end%>
+
+    </body>

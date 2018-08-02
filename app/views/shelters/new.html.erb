@@ -1,9 +1,27 @@
-<h1>Enter in your shelter!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {style="background-color:#ffffff;"}
+h1   {text-align: center; font-family: "Futura" ; color:#92BFFF;}
+h2   {text-decoration: none; text-align: center; font-family: "Futura" ; color:#92BFFF;}
+p    {text-align: center; font-family: "Futura" ; color:#7F7F7D;}
+li   {list-style-type: none; text-decoration: none}
+</style>
 
+<h1>Enter in your shelter!</h1>
+</head>
+
+<body>
+
+<p>
 <%= form_for @shelter do |f|%>
 <%= f.label :name %>
-<%= f.text_field :name %>
+<%= f.text_field :name %><br>
 <%= f.label :address %>
-<%= f.text_area :address %>
+<%= f.text_area :address %><br>
 <%= f.submit %>
 <%end%>
+</p>
+
+</body>
