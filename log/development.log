@@ -8893,3 +8893,1221 @@ Processing by SheltersController#show as HTML
 Completed 200 OK in 64ms (Views: 58.8ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Cat&commit=filter" for 127.0.0.1 at 2018-08-01 21:48:05 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Cat"}, "commit"=>"filter"}
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mTypeOfAnimal Load (0.5ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  Rendered animals/index.html.erb within layouts/application (147.6ms)
+Completed 200 OK in 562ms (Views: 524.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2018-08-01 21:48:28 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mTypeOfAnimal Load (0.6ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.6ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  Rendered animals/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 68ms (Views: 62.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-01 21:48:55 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:21
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:25
+  Rendered animals/new.html.erb within layouts/application (118.8ms)
+Completed 200 OK in 202ms (Views: 197.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/shelters" for 127.0.0.1 at 2018-08-01 21:52:01 -0400
+Processing by SheltersController#index as HTML
+  Rendering shelters/index.html.erb within layouts/application
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/shelters/index.html.erb:16
+  Rendered shelters/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 209ms (Views: 204.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shelters" for 127.0.0.1 at 2018-08-02 11:59:03 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by SheltersController#index as HTML
+  Rendering shelters/index.html.erb within layouts/application
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/shelters/index.html.erb:16
+  Rendered shelters/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 320ms (Views: 301.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 11:59:05 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.6ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:31
+  Rendered animals/new.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 156ms (Views: 130.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2018-08-02 11:59:28 -0400
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No675LohZGk5woOIrQF7uUtYNL89KAVAt72RIbZGU+dj6kBNqo6Cm1QPyxI7Px3T2DJn7ElLTkThrP5xmj1z1Q==", "animal"=>{"name"=>"", "description"=>"", "shelter_id"=>"1"}, "animal_type"=>"xenomorph", "commit"=>"Add animal to our list"}
+Completed 500 Internal Server Error in 38914ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/animals_controller.rb:14:in `create'
+Started POST "/animals" for 127.0.0.1 at 2018-08-02 12:01:06 -0400
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No675LohZGk5woOIrQF7uUtYNL89KAVAt72RIbZGU+dj6kBNqo6Cm1QPyxI7Px3T2DJn7ElLTkThrP5xmj1z1Q==", "animal"=>{"name"=>"", "description"=>"", "shelter_id"=>"1"}, "animal_type"=>"Dog", "commit"=>"Add animal to our list"}
+Completed 500 Internal Server Error in 135578ms (ActiveRecord: 7.0ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2018-08-02 12:03:33 -0400
+  
+Processing by AnimalsController#create as HTML
+SystemExit (exit):
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No675LohZGk5woOIrQF7uUtYNL89KAVAt72RIbZGU+dj6kBNqo6Cm1QPyxI7Px3T2DJn7ElLTkThrP5xmj1z1Q==", "animal"=>{"name"=>"", "description"=>"", "shelter_id"=>"1"}, "animal_type"=>"Dog", "commit"=>"Add animal to our list"}
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/animals_controller.rb:15:in `create'
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 12:04:30 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mTypeOfAnimal Load (0.6ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:21
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:22
+  Rendered animals/index.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 314ms (Views: 292.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 12:04:40 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:31
+  Rendered animals/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 76ms (Views: 69.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/animals" for 127.0.0.1 at 2018-08-02 12:04:46 -0400
+Processing by AnimalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oDXRYRFZzT/Bn83FpQMEQhKISdq70bspdZfTTdqWKPf1USrIAfYrzaxShV8zPWIogeIaic+y8C0jhrwd9u0IxQ==", "animal"=>{"name"=>"", "description"=>"", "shelter_id"=>"1"}, "animal_type"=>"Dog", "commit"=>"Add animal to our list"}
+  [1m[36mTypeOfAnimal Load (1.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."name" = ? LIMIT ?[0m  [["name", "Dog"], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:13
+Completed 500 Internal Server Error in 5052908ms (ActiveRecord: 1.3ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/animals_controller.rb:17:in `create'
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:29:38 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/josh/Documents/dev/project_2/project_2/app/views/animals/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/animals/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:30:16 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendered animals/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 5..7)):
+    16: </body>
+    17: 
+    18: <%=form_tag '/index', method: :get%>
+    19: <%=collection_select :animal, TypeOfAnimal.all, :name, :name %>
+    20: <%=submit_tag%>
+    21: 
+    22: 
+  
+app/views/animals/index.html.erb:19:in `_app_views_animals_index_html_erb__104303528890860280_70287553923340'
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:31:18 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.7ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:25
+  [1m[36mTypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (91.3ms)
+Completed 200 OK in 291ms (Views: 282.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:31:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:31:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:33:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:33:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:34:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:34:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:35:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:36:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:38:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&animal%5Bget%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:40:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:40:17 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (1.3ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  Rendered animals/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `type_of_animal_id' for #<Animal::ActiveRecord_Relation:0x007fda30cf4100>):
+    16: </body>
+    17: 
+    18: <%=form_tag "/animals", method: :get%>
+    19: <%=collection_select :animals,:type_of_animal_id, TypeOfAnimal.all, :name, :name %>
+    20: <%=submit_tag%>
+    21: 
+    22: 
+  
+app/views/animals/index.html.erb:19:in `_app_views_animals_index_html_erb__104303528890860280_70287549372800'
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:40:45 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.6ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:25
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 104ms (Views: 96.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:40:53 -0400
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Cat"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 180137ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:43:54 -0400
+  
+Processing by AnimalsController#index as HTML
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/animals_controller.rb:5:in `index'
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 4329ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:44:01 -0400
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:44:29 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+  [1m[36mAnimal Load (0.6ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/models/animal.rb:23
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/models/animal.rb:23:in `block in filter'
+app/models/animal.rb:23:in `filter'
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 13:44:31 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.5ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:27
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:31
+  Rendered animals/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 315ms (Views: 308.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:44:36 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:25
+  [1m[36mTypeOfAnimal Load (0.4ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 79ms (Views: 72.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:45:07 -0400
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:25
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 106ms (Views: 101.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:45:31 -0400
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/models/animal.rb:23
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/models/animal.rb:23:in `block in filter'
+app/models/animal.rb:23:in `filter'
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:46:01 -0400
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:47:21 -0400
+Completed 500 Internal Server Error in 80383ms (ActiveRecord: 0.6ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `filter'
+app/models/animal.rb:24:in `filter'
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:47:24 -0400
+Processing by AnimalsController#index as HTML
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Cat"}, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 75064ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/animals_controller.rb:5:in `index'
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:48:42 -0400
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:48:42 -0400
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:48:42 -0400
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (2.6ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mAnimal Load (2.0ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:25
+  [1m[36mTypeOfAnimal Load (1.4ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (3.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.9ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.8ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (829.6ms)
+Completed 200 OK in 78817ms (Views: 1432.5ms | ActiveRecord: 44.3ms)
+
+
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:48:46 -0400
+Processing by AnimalsController#index as HTML
+Processing by AnimalsController#index as HTML
+Processing by AnimalsController#index as HTML
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+Started GET "/animals" for 127.0.0.1 at 2018-08-02 13:48:46 -0400
+  Rendering animals/index.html.erb within layouts/application
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  Rendering animals/index.html.erb within layouts/application
+Completed 500 Internal Server Error in 16214ms (ActiveRecord: 0.0ms)
+
+
+  Rendering animals/index.html.erb within layouts/application
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `filter'
+app/models/animal.rb:24:in `filter'
+app/controllers/animals_controller.rb:4:in `index'
+  [1m[36mTypeOfAnimal Load (1.4ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mTypeOfAnimal Load (2.1ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mTypeOfAnimal Load (5.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  [1m[36mTypeOfAnimal Load (1.4ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  [1m[36mAnimal Load (3.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/views/animals/index.html.erb:25
+  ↳ app/views/animals/index.html.erb:19
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mAnimal Load (3.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[36mAnimal Load (2.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[36mAnimal Load (8.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  [1m[36mTypeOfAnimal Load (9.4ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:25
+  ↳ app/views/animals/index.html.erb:25
+  ↳ app/views/animals/index.html.erb:25
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mTypeOfAnimal Load (1.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (5.8ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (1.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (3.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.6ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (1.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.9ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mTypeOfAnimal Load (1.8ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (2.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (8.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE Shelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Shelter Load (0.6ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.9ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mTypeOfAnimal Load (2.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (1.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (1.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE Shelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.4ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.6ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (1.6ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mShelter Load (2.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.5ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE TypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Shelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mCACHE TypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mTypeOfAnimal Load (0.9ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (1.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mCACHE Shelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (1.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mTypeOfAnimal Load (1.7ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTypeOfAnimal Load (1.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:27
+  ↳ app/views/animals/index.html.erb:27
+  [1m[36mShelter Load (1.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (1.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mShelter Load (1.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mTypeOfAnimal Load (1.6ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (4276.9ms)
+  ↳ app/views/animals/index.html.erb:27
+  Rendered animals/index.html.erb within layouts/application (4245.4ms)
+  Rendered animals/index.html.erb within layouts/application (4208.7ms)
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (4681.0ms)
+Completed 200 OK in 23156ms (Views: 23033.4ms | ActiveRecord: 33.0ms)
+
+
+Completed 200 OK in 7138ms (Views: 7075.6ms | ActiveRecord: 48.9ms)
+
+
+Completed 200 OK in 23324ms (Views: 23256.4ms | ActiveRecord: 26.1ms)
+
+
+Completed 200 OK in 23467ms (Views: 23369.7ms | ActiveRecord: 36.5ms)
+
+
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Cat&commit=Save+changes" for 127.0.0.1 at 2018-08-02 13:49:49 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Cat"}, "commit"=>"Save changes"}
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.6ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:23
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mShelter Load (0.4ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 359ms (Views: 278.8ms | ActiveRecord: 9.1ms)
+
+

@@ -18,4 +18,9 @@ class Animal < ApplicationRecord
       "Looking for a home! 🏠"
     end
   end
+
+  def self.filter(name)
+    all.select{|animal| name.downcase == animal.type_of_animal.name.downcase}
+  end
+
 end
