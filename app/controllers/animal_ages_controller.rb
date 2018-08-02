@@ -1,0 +1,2 @@
+class AnimalAgesController < ApplicationController
+end
