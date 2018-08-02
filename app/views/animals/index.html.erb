@@ -15,6 +15,12 @@ li   {list-style-type: none; text-decoration: none}
 
 </body>
 
+<%=form_tag animals_path, method: :get%>
+<%=collection_select :animal,:type_of_animal_id, TypeOfAnimal.all, :name, :name %>
+<%=submit_tag%>
+
+
+
 <ul>
   <%@animals.each do |animal|%>
   <li><h2><%=link_to animal.name, animal_path(animal)%></h2></li>

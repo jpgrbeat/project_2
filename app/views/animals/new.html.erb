@@ -18,7 +18,13 @@ li   {list-style-type: none; text-decoration: none}
 <%= f.label :name%>
 <%= f.text_field :name%><br>
 <%= f.label :type%>
-<%= f.collection_select :type_of_animal_id, TypeOfAnimal.all, :id, :name%><br>
+  <input list="animal_type" name="animal_type">
+  <datalist id="animal_type">
+    <%TypeOfAnimal.all.each do |animal_type|%>
+    <option><%=animal_type.name%></option>
+    <%end%>
+  </datalist>
+<!-- <%= f.collection_select :type_of_animal_id, TypeOfAnimal.all, :id, :name%><br> -->
 <%= f.label :description%>
 <%= f.text_area :description%><br>
 <%= f.label :shelter%>
