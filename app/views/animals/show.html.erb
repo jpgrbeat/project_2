@@ -1,6 +1,22 @@
-  <h1>Name: <%=@animal.name%></h1>
-  <h3>Type: <%=@animal.type_of_animal.name%></h3>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {style="background-color:#ffffff;"}
+h1   {text-align: center; font-family: "Futura" ; color:#92BFFF;}
+h2   {text-decoration: none; text-align: center; font-family: "Futura" ; color:#92BFFF;}
+h3   {text-decoration: none; text-align: center; font-family: "Futura" ; color:#92BFFF;}
+p    {text-align: center; font-family: "Futura" ; color:#7F7F7D;}
+li   {list-style-type: none; text-decoration: none}
+</style>
+
+</head>
+<body>
+
+  <h1><%=@animal.name%></h1>
+  <h2>Type: <%=@animal.type_of_animal.name%></h2>
   <p>Description: <%=@animal.description%></p>
   <p>Shelter: <%=link_to @animal.shelter_name, shelter_path(@animal.shelter)%></p>
-  <%=@animal.adoption_status_message%>
-  <!--show adoption status-!>
+  <p><%=@animal.adoption_status_message%></p>
+
+</body>

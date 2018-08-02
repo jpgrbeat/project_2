@@ -1,7 +1,26 @@
-<%@animals.each do |animal|%>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {style="background-color:#ffffff;"}
+h1   {text-align: center; font-family: "Futura" ; color:#92BFFF;}
+h2   {text-decoration: none; text-align: center; font-family: "Futura" ; color:#92BFFF;}
+h3   {text-decoration: none; text-align: center; font-family: "Futura" ; color:#92BFFF;}
+p    {text-align: center; font-family: "Futura" ; color:#7F7F7D;}
+li   {list-style-type: none; text-decoration: none}
+</style>
+
+<h1>All of the Animals!</h1>
+</head>
+
+</body>
+
 <ul>
-  <li><%=link_to animal.name, animal_path(animal)%></li>
-  <%=animal.type_of_animal%><br>
-  <%=link_to animal.shelter.name, shelter_path(animal.shelter)%>
-</ul><br>
-<%end%>
+  <%@animals.each do |animal|%>
+  <li><h2><%=link_to animal.name, animal_path(animal)%></h2></li>
+  <p>Type of Animal: <%=animal.type_of_animal.name%></p>
+  <p>Shelter: <%=link_to animal.shelter.name, shelter_path(animal.shelter)%></p><br>
+  <%end%>
+</ul>
+
+</body>
