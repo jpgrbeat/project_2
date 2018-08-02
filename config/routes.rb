@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :animal_breeds
+  resources :animal_ages
   resources :type_of_animals
   resources :users 
   resources :animals

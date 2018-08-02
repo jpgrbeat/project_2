@@ -1,6 +1,10 @@
 class Animal < ApplicationRecord
   belongs_to :shelter
   belongs_to :type_of_animal
+  belongs_to :animal_age
+  belongs_to :animal_breed
+
+  accepts_nested_attributes_for :animal_age 
 
   validates :name, presence: true
   validates :type_of_animal, presence: true

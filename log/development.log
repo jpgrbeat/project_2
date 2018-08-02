@@ -10111,3 +10111,287 @@ Processing by AnimalsController#index as HTML
 Completed 200 OK in 359ms (Views: 278.8ms | ActiveRecord: 9.1ms)
 
 
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateAnimalAges (20180802182527)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180802182527_create_animal_ages.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "animal_ages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "age" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180802182527_create_animal_ages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180802182527"]]
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateAnimalBreeds (20180802182557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "animal_breeds" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "breed" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180802182557_create_animal_breeds.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180802182557"]]
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to AddAnimalBreedIdToAnimals (20180802190005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "animals" ADD "animal_breed_id" integer[0m
+  ↳ db/migrate/20180802190005_add_animal_breed_id_to_animals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180802190005"]]
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to AddAnimalAgeIdToAnimals (20180802190117)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "animals" ADD "animal_age_id" integer[0m
+  ↳ db/migrate/20180802190117_add_animal_age_id_to_animals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180802190117"]]
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mAnimalAge Load (0.5ms)[0m  [1m[34mSELECT  "animal_ages".* FROM "animal_ages" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:29:49 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.5ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  Rendered animals/new.html.erb within layouts/application (32.1ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `age' for #<Animal:0x007fd13edae078>):
+    25:     <%end%>
+    26:   </datalist>
+    27: <%= f.label :age%>
+    28: <%=f.text_field :age%>
+    29: <!-- <%= f.collection_select :type_of_animal_id, TypeOfAnimal.all, :id, :name%><br> -->
+    30: <%= f.label :description%>
+    31: <%= f.text_area :description%><br>
+  
+app/views/animals/new.html.erb:28:in `block in _app_views_animals_new_html_erb__4398485916696456263_70268339791840'
+app/views/animals/new.html.erb:17:in `_app_views_animals_new_html_erb__4398485916696456263_70268339791840'
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:32:31 -0400
+Processing by AnimalsController#new as HTML
+Started GET "/animals?utf8=%E2%9C%93&animal%5Btype_of_animal_id%5D=Dog&commit=Save+changes" for 127.0.0.1 at 2018-08-02 15:32:41 -0400
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/josh/Documents/dev/project_2/project_2/app/views/animals/new.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/animals/new.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input
+Processing by AnimalsController#index as HTML
+  Parameters: {"utf8"=>"✓", "animal"=>{"type_of_animal_id"=>"Dog"}, "commit"=>"Save changes"}
+  [1m[36mAnimal Load (1.1ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  ↳ app/models/animal.rb:27
+  [1m[36mTypeOfAnimal Load (0.7ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT  "type_of_animals".* FROM "type_of_animals" WHERE "type_of_animals"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/animal.rb:27
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/index.html.erb:19
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/animals/index.html.erb:28
+  Rendered animals/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 398ms (Views: 348.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:32:58 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/josh/Documents/dev/project_2/project_2/app/views/animals/new.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/animals/new.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:39:57 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/josh/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/josh/Documents/dev/project_2/project_2/app/views/animals/new.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/animals/new.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:43:55 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.8ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  Rendered animals/new.html.erb within layouts/application (224.8ms)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `field_for' for #<ActionView::Helpers::FormBuilder:0x007fb950e912c0>
+Did you mean?  fields_for):
+    24:     <option><%=animal_type.name%></option>
+    25:     <%end%>
+    26:   </datalist>
+    27: <%= f.field_for :animal_age do |ag|%>
+    28: <%=ag.label :animal_age%>
+    29: <%=ag.text_field :animal_age%>
+    30: <%end%>
+  
+app/views/animals/new.html.erb:27:in `block in _app_views_animals_new_html_erb__3747511372555438141_70216951530740'
+app/views/animals/new.html.erb:17:in `_app_views_animals_new_html_erb__3747511372555438141_70216951530740'
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:44:31 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.3ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:31
+  [1m[36mShelter Load (1.0ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:35
+  Rendered animals/new.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 354ms (Views: 349.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:44:43 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.1ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:31
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:35
+  Rendered animals/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:48:18 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:31
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:35
+  Rendered animals/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:48:43 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (6.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:31
+  [1m[36mShelter Load (0.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:35
+  Rendered animals/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 74ms (Views: 64.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:49:40 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.2ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:31
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:35
+  Rendered animals/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:56:16 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.5ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mCACHE TypeOfAnimal Load (0.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:31
+  [1m[36mShelter Load (0.4ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:35
+  Rendered animals/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 83ms (Views: 63.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 15:59:58 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.4ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:36
+  Rendered animals/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 70ms (Views: 65.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 16:06:14 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (1.0ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mAnimalBreed Load (0.4ms)[0m  [1m[34mSELECT "animal_breeds".* FROM "animal_breeds"[0m
+  ↳ app/views/animals/new.html.erb:38
+  [1m[36mShelter Load (0.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:47
+  Rendered animals/new.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 101ms (Views: 95.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/animals/new" for 127.0.0.1 at 2018-08-02 17:09:25 -0400
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  [1m[36mTypeOfAnimal Load (0.5ms)[0m  [1m[34mSELECT "type_of_animals".* FROM "type_of_animals"[0m
+  ↳ app/views/animals/new.html.erb:23
+  [1m[36mAnimalBreed Load (0.7ms)[0m  [1m[34mSELECT "animal_breeds".* FROM "animal_breeds"[0m
+  ↳ app/views/animals/new.html.erb:38
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/views/animals/new.html.erb:47
+  Rendered animals/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 154ms (Views: 120.3ms | ActiveRecord: 4.0ms)
+
+
