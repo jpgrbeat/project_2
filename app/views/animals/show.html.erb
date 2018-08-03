@@ -6,11 +6,15 @@
 <body>
 
   <h1><%=@animal.name%></h1>
-  <h2>Type: <%=@animal.type_of_animal.name%></h2>
-  <h2>Age: <%=@animal.age%></h2>
+  <h3>Type: <%=@animal.type_of_animal.name%></h3>
+  <h3>Age: <%=@animal.age%></h3>
   <p>Description: <%=@animal.description%></p>
   <p>Shelter: <%=link_to @animal.shelter_name, shelter_path(@animal.shelter)%></p>
   <p><%=@animal.adoption_status_message%></p>
+
+<div class="pics">
+  <%=image_tag @animal.image_html%>
+</div>
 
 <button class="ui button"><%=link_to "Edit Animal", edit_animal_path(@animal)%></button>
 

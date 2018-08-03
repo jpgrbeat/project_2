@@ -7,15 +7,15 @@
 
 </body>
 
+<div class="numbers">
+ <p>Animals Adopted:<%= Animal.adopted%></p><br>
+ <p>Animals That Still Need Homes:<%= Animal.not_adopted%></p>
+</div>
+
 <div class="filter">
 <%=form_tag animals_path, method: :get%>
 <%=collection_select :animal,:type_of_animal_id, TypeOfAnimal.all, :name, :name %>
 <%=submit_tag%>
-</div>
-
-<div class="numbers">
- <p>Animals Adopted:<%= Animal.adopted%></p><br>
- <p>Animals That Still Need Homes:<%= Animal.not_adopted%></p>
 </div>
 
 <ul>

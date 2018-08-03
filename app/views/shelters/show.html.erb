@@ -2,19 +2,29 @@
 <html>
 <head>
 
-<h1><%= @shelter.name %></h1>
 
 </head>
 <body>
-<h3><%= @shelter.address %></h3><br>
+  <h1><%= @shelter.name %></h1>
+  <h3><%=@shelter.phone%></h3> <h3><%=@shelter.email%></h3>
+  <h3><%= @shelter.address %></h3><br>
+
+<div class="mission">
+  <p><%=@shelter.mission%></p>
+</div>
 
 <% @shelter.animals.each do |animal| %>
 <p>Name: <%= link_to animal.name, animal_path(animal) %></p>
 <p><%= animal.type_of_animal.name %></p><br>
 <%end%>
-<p><%=link_to "Return to Shelters", shelters_path%></p>
+<h3><%=link_to "Return to Shelters", shelters_path%></h3>
 
-<button class="ui button"><%= link_to "Add animal for adoption", new_animal_path%></button>
 
+<button class="ui button"><%= link_to "Add Animal For Adoption", new_animal_path%></button>
+<button class="ui button"><%= link_to "Update Shelter Info", edit_shelter_path(@shelter)%></button>
+
+<%=form_tag shelter_path(@shelter), method: "delete" do%>
+<%=submit_tag "Remove Shelter", :class=>"ui button"%>
+<%end%>
 
 </body>
