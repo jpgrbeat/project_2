@@ -1,4 +1,5 @@
 class AnimalsController < ApplicationController
+
   def index
     if params[:animal]
       @animals = Animal.filter(params[:animal][:type_of_animal_id])
@@ -6,6 +7,7 @@ class AnimalsController < ApplicationController
       @animals = Animal.all
     end
   end
+
   def new
     @animal = Animal.new
   end
@@ -29,6 +31,26 @@ class AnimalsController < ApplicationController
 
   def show
     @animal = Animal.find(params[:id])
+  end
+
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
+  def update
+    @animal = Animal.find(params[:id])
+      @animal.update(animal_params)
+        if @animal.valid?
+          @animal.save
+          redirect_to animal_path(@animal)
+        else
+          render :edit
+        end
+  end
+
+  def destroy
+   Animal.find(params[:id]).destroy
+   redirect_to animals_path
   end
 
   private
