@@ -18,4 +18,17 @@ class Animal < ApplicationRecord
       "Looking for a home! 🏠"
     end
   end
+
+  def self.adopted
+    Animal.all.select do |animal|
+      animal.adopted == "adopted"
+    end.size
+  end
+
+  def self.not_adopted
+    Animal.all.select do |animal|
+      animal.adopted == false
+    end.size
+  end
+
 end

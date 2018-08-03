@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <h1>Add a new animal for adoption!</h1>
+      <%=form_for @animal, :html => {:class => "ui form"} do |f|%>
+
+      <div class="field">
+        <div class="two fields">
+          <div class="field">
+            <%= f.label :name%>
+            <%= f.text_field :name%>
+          </div>
+          <div class="field">
+            <%= f.label :type%>
+            <%= f.collection_select :type_of_animal_id, TypeOfAnimal.all, :id, :name%>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <%= f.label :description%>
+        <%= f.text_area :description%>
+      </div>
+
+      <div class="field">
+        <div class="two fields">
+          <div class="field">
+            <%= f.label :shelter%>
+            <%= f.collection_select :shelter_id, Shelter.all, :id, :name%>
+          </div>
+          <div class="field">
+            <%=f.submit "Add animal to our list"%>
+          </div>
+        </div>
+      </div>
+
+      <%end%>
+
+  </div>
+</body>

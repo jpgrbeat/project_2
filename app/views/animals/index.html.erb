@@ -7,10 +7,16 @@
 
 </body>
 
+<div class="numbers">
+ <p>Animals Adopted:<%= Animal.adopted%></p><br>
+ <p>Animals That Still Need Homes:<%= Animal.not_adopted%></p>
+</div>
+
+
 <ul>
   <%@animals.each do |animal|%>
-  <li><h2><%=link_to animal.name, animal_path(animal)%></h2></li>
-  <p>Type of Animal: <%=animal.type_of_animal.name%></p>
+  <li><h3><%=link_to animal.name, animal_path(animal)%></h3></li>
+  <p><%=animal.type_of_animal.name%></p>
   <p>Shelter: <%=link_to animal.shelter.name, shelter_path(animal.shelter)%></p><br>
   <%end%>
 </ul>
