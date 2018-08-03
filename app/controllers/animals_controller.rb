@@ -1,6 +1,10 @@
 class AnimalsController < ApplicationController
   def index
-    @animals = Animal.all
+    if params[:animal]
+      @animals = Animal.filter(params[:animal][:type_of_animal_id])
+    else
+      @animals = Animal.all
+    end
   end
   def new
     @animal = Animal.new
@@ -9,7 +13,13 @@ class AnimalsController < ApplicationController
   def create
     @animal = Animal.new(animal_params)
 
+    anim = params[:animal_type]
+    type = TypeOfAnimal.find_or_create_by(name: anim)
+    @animal.type_of_animal_id = type[:id]
+
+    # debugger
     if @animal.valid?
+      # debugger
       @animal.save
       redirect_to animal_path(@animal)
     else
@@ -24,6 +34,6 @@ class AnimalsController < ApplicationController
   private
 
   def animal_params
-    params.require(:animal).permit(:id, :name, :type_of_animal_id, :shelter_id, :description, :adopted)
+    params.require(:animal).permit(:id, :name, :type_of_animal_id, :shelter_id, :description, :adopted, :age)
   end
 end
