@@ -15,6 +15,7 @@ li   {list-style-type: none; text-decoration: none}
 
   <h1><%=@animal.name%></h1>
   <h2>Type: <%=@animal.type_of_animal.name%></h2>
+  <h2>Age: <%=@animal.age%></h2>
   <p>Description: <%=@animal.description%></p>
   <p>Shelter: <%=link_to @animal.shelter_name, shelter_path(@animal.shelter)%></p>
   <p><%=@animal.adoption_status_message%></p>

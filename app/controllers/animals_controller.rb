@@ -17,8 +17,9 @@ class AnimalsController < ApplicationController
     type = TypeOfAnimal.find_or_create_by(name: anim)
     @animal.type_of_animal_id = type[:id]
 
-
+    # debugger
     if @animal.valid?
+      # debugger
       @animal.save
       redirect_to animal_path(@animal)
     else
@@ -33,6 +34,6 @@ class AnimalsController < ApplicationController
   private
 
   def animal_params
-    params.require(:animal).permit(:id, :name, :type_of_animal_id, :shelter_id, :description, :adopted)
+    params.require(:animal).permit(:id, :name, :type_of_animal_id, :shelter_id, :description, :adopted, :age)
   end
 end

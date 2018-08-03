@@ -25,20 +25,8 @@ li   {list-style-type: none; text-decoration: none}
     <%end%>
   </datalist>
 
-
-<%= f.fields_for :animal_age do |ag|%>
-<%=ag.label :animal_age%>
-<%=ag.text_field :animal_age%>
-<%end%>
-
-
-<%= f.label :breed%>
-  <input list="animal_breed" name="animal_breed">
-  <datalist id="animal_breed">
-    <%AnimalBreed.all.each do |animal_breed|%>
-    <option><%=animal_breed.breed%></option>
-    <%end%>
-  </datalist>
+<%=f.label :age%>
+<%=f.text_field :age%>
 
 
 <%= f.label :description%>
