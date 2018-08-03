@@ -12,4 +12,6 @@
   <p>Shelter: <%=link_to @animal.shelter_name, shelter_path(@animal.shelter)%></p>
   <p><%=@animal.adoption_status_message%></p>
 
+<button class="ui button"><%=link_to "Edit Animal", edit_animal_path(@animal)%></button>
+
 </body>

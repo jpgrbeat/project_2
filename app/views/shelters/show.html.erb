@@ -9,9 +9,12 @@
 <h3><%= @shelter.address %></h3><br>
 
 <% @shelter.animals.each do |animal| %>
-<p>Animal Name: <%= link_to animal.name, animal_path(animal) %></p>
-<p>Type of Animal: <%= animal.type_of_animal.name %></p><br>
+<p>Name: <%= link_to animal.name, animal_path(animal) %></p>
+<p><%= animal.type_of_animal.name %></p><br>
 <%end%>
 <p><%=link_to "Return to Shelters", shelters_path%></p>
+
+<button class="ui button"><%= link_to "Add animal for adoption", new_animal_path%></button>
+
 
 </body>

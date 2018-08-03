@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2018_08_02_190005) do
 
-  create_table "animal_ages", force: :cascade do |t|
-    t.integer "age"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "animal_breeds", force: :cascade do |t|
     t.string "breed"
     t.datetime "created_at", null: false

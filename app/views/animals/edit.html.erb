@@ -6,8 +6,9 @@
 
 <body>
 
-  <div class="wrapper">
 
+  <div class="wrapper">
+    <br>
     <h1>Add a new animal for adoption!</h1>
       <%=form_for @animal, :html => {:class => "ui form"} do |f|%>
 
@@ -19,7 +20,12 @@
           </div>
           <div class="field">
             <%= f.label :type%>
-            <%= f.collection_select :type_of_animal_id, TypeOfAnimal.all, :id, :name%>
+            <input list="animal_type" name="animal_type">
+            <datalist id="animal_type">
+              <%TypeOfAnimal.all.each do |animal_type|%>
+              <option><%=animal_type.name%></option>
+              <%end%>
+            </datalist>
           </div>
         </div>
       </div>
@@ -36,10 +42,27 @@
             <%= f.collection_select :shelter_id, Shelter.all, :id, :name%>
           </div>
           <div class="field">
-            <%=f.submit "Add animal to our list"%>
+            <%= f.label :age%>
+            <%= f.text_field :age%>
           </div>
         </div>
       </div>
+
+      <div class="field">
+        <div class="field">
+          <%= f.label "Adoption Status"%>
+          <select name="adopted">
+            <option value="false">Available</option>
+            <option value="true">Not Available</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <%=f.submit "Update animal"%>
+      </div>
+
+
 
       <%end%>
 

@@ -29,10 +29,11 @@ class Animal < ApplicationRecord
 
   def self.filter(name)
     all.select{|animal| name.downcase == animal.type_of_animal.name.downcase}
+  end
 
   def self.adopted
     Animal.all.select do |animal|
-      animal.adopted == "adopted"
+      animal.adopted == true
     end.size
   end
 
@@ -40,7 +41,11 @@ class Animal < ApplicationRecord
     Animal.all.select do |animal|
       animal.adopted == false
     end.size
+  end
 
+  def change_adoption_status
+    self.adopted = !self.adopted
+    self.save
   end
 
 end

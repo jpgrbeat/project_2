@@ -38,7 +38,13 @@ class AnimalsController < ApplicationController
   end
 
   def update
+
     @animal = Animal.find(params[:id])
+    if params[:adopted] == "true"
+      @animal.adopted = true
+    elsif params[:adopted] == "false"
+      @animal.adopted = false
+    end
       @animal.update(animal_params)
         if @animal.valid?
           @animal.save
